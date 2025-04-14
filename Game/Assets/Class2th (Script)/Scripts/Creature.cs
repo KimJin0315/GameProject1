@@ -2,22 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-Stat stat;
 
 public class Creature : MonoBehaviour
 {
-    new Stat stat;
+    private Stat stat = new Stat();
+
     public Creature() // »ý¼ºÀÚ
     {
-        Debug.Log("Creature");
+        stat.Level = 1;
+        stat.Health = 100;
+        stat.Name = "Bear";
 
-        stat.level = 1;
-        stat.health = 100;
-        stat.name = "Monster";
-
-        Debug.Log(stat.level);
-        Debug.Log(stat.health);
-        Debug.Log(stat.name);
+        Debug.Log("Level : " + stat.Level);
+        Debug.Log("Health : " + stat.Health);
+        Debug.Log("Name : " + stat.Name);
     }
 
 }
