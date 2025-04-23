@@ -4,30 +4,23 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    void Start()
-    {
-        transform.position = new Vector3( 0, 0, 0 );
-    }
+    [SerializeField] Vector3 direction;
+
+    [SerializeField] float speed = 5.0f;
+ 
     void Update()
     {
-       
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            transform.position += new Vector3(0, 0, 1);
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            transform.position += new Vector3(-1, 0, 0);
+        direction.x = Input.GetAxisRaw("Horizontal");
+        direction.z = Input.GetAxisRaw("Vertical");
+        //Raw >> 즉각 적으로 반응
 
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            transform.position += new Vector3(0, 0, -1);
+        direction.Normalize();
 
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            transform.position += new Vector3(1, 0, 0);
-        }
+        // Time.deltaTime이란?
+        // 마지막 프레임이 완료하는데 경과한 시간을 초 단위로 반환하는 시간입니다.
+        transform.position = transform.position + direction * Time.deltaTime * speed;
+
+
+
     }
 }
