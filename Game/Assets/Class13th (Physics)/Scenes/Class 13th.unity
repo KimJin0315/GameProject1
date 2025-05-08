@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 7816934019651970027}
   - component: {fileID: 8001390320437997449}
   - component: {fileID: 8001390320437997448}
+  - component: {fileID: 8001390320437997450}
   m_Layer: 0
   m_Name: Soccer
   m_TagString: Untagged
@@ -525,6 +526,7 @@ GameObject:
   - component: {fileID: 2289901510864264835}
   - component: {fileID: 5004667074998328890}
   - component: {fileID: 5004667074998328889}
+  - component: {fileID: 5004667074998328891}
   m_Layer: 0
   m_Name: Basketball
   m_TagString: Untagged
@@ -580,6 +582,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.12000003
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5004667074998328891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5004667074998328888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d63f4028eac494599dfd72d1f220a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  direction: {x: 0, y: 5, z: 0}
+  rigidbody: {fileID: 0}
 --- !u!4 &6194230827885899137
 Transform:
   m_ObjectHideFlags: 0
@@ -701,6 +718,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.09840783
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8001390320437997450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909119334055856912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d63f4028eac494599dfd72d1f220a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  direction: {x: 0, y: 5, z: 0}
+  rigidbody: {fileID: 0}
 --- !u!1 &8382114482428715879
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +746,7 @@ GameObject:
   - component: {fileID: 772780538967038484}
   - component: {fileID: 8382114482428715881}
   - component: {fileID: 8382114482428715880}
+  - component: {fileID: 8382114482428715882}
   m_Layer: 0
   m_Name: Volleyball
   m_TagString: Untagged
@@ -769,6 +802,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.099999994
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8382114482428715882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8382114482428715879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d63f4028eac494599dfd72d1f220a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  direction: {x: 0, y: 5, z: 0}
+  rigidbody: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
